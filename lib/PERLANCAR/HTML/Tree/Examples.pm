@@ -50,7 +50,7 @@ _
         },
     },
     result => {
-        schema => 'obj*',
+        schema => 'str*',
     },
     result_naked => 1,
 };
