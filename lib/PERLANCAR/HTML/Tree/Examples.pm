@@ -45,10 +45,6 @@ _
             req => 1,
             pos => 0,
         },
-        backend => {
-            schema => ['str*', in=>['array', 'hash']],
-            default => 'hash',
-        },
     },
     result => {
         schema => 'str*',
