@@ -1,5 +1,14 @@
 Revision history for PERLANCAR-HTML-Tree-Examples
 
+1.000.001  2016-04-01 (PERLANCAR)
+
+           - No data changes.
+
+           - Include overview of available sample data in POD.
+
+           - Remove unneeded argument ('backend', copy-paste leftover).
+
+
 1.000   2016-04-01 (PERLANCAR)
 
         - Bump version number (use 3-digit minor).
