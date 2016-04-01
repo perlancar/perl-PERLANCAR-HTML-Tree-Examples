@@ -9,6 +9,7 @@ use warnings;
 
 use HTML::Tree::Create::Callback::ChildrenPerLevel
     qw(create_html_tree_using_callback);
+
 use Exporter::Rinci qw(import);
 
 our %SPEC;
@@ -63,10 +64,10 @@ sub gen_sample_html {
     my $elems_per_level;
     if ($size eq 'tiny1') {
         $nums_per_level = [2];
-        $elems_per_level = ['body', 'p'];
+        $elems_per_level = ['body', 'h1'];
     } elsif ($size eq 'small1') {
         $nums_per_level = [3, 2, 8, 2];
-        $elems_per_level = ['body', 'class', 'table', 'tr', 'td'];
+        $elems_per_level = ['body', 'h1'..'h4'];
     } elsif ($size eq 'medium1') {
         $nums_per_level = [100, 3000, 5000, 8000, 3000, 1000, 300];
         $elems_per_level = ['body', 'class', 'class', 'class', 'class',
