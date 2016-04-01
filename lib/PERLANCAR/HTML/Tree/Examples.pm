@@ -70,8 +70,7 @@ sub gen_sample_html {
         $elems_per_level = ['body', 'h1'..'h4'];
     } elsif ($size eq 'medium1') {
         $nums_per_level = [100, 3000, 5000, 8000, 3000, 1000, 300];
-        $elems_per_level = ['body', 'class', 'class', 'class', 'class',
-                            'table', 'tr', 'td'];
+        $elems_per_level = ['body', 'h1'..'h7'];
     } else {
         die "Unknown size '$size'";
     }
