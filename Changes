@@ -1,5 +1,12 @@
 Revision history for PERLANCAR-HTML-Tree-Examples
 
+1.000   2016-04-01 (PERLANCAR)
+
+        - Bump version number (use 3-digit minor).
+
+        - Forgot to adjust elements for size=medium1.
+
+
 0.05    2016-04-01 (PERLANCAR)
 
         - Tweak/modify examples in PERLANCAR::Tree::Examples and
