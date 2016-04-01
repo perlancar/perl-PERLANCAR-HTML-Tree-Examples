@@ -8,6 +8,8 @@ Revision history for PERLANCAR-HTML-Tree-Examples
 
            - Remove unneeded argument ('backend', copy-paste leftover).
 
+           - Mention accompanying CLI: show-perlancar-sample-html-tree.
+
 
 1.000   2016-04-01 (PERLANCAR)
 
