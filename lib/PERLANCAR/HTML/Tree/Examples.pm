@@ -84,8 +84,6 @@ sub gen_sample_data {
     );
 }
 
-*gen_sample_html = \&gen_sample_data;
-
 1;
 # ABSTRACT:
 
