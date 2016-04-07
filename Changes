@@ -1,5 +1,12 @@
 Revision history for PERLANCAR-HTML-Tree-Examples
 
+1.0.3   2016-04-07 (PERLANCAR)
+
+	- [Removed] Remove old function alias gen_sample_html because it
+	  was not exported by Exporter::Rinci anyway after all (no
+	  metadata).
+
+
 1.000.002  2016-04-03 (PERLANCAR)
 
 	   - No functional changes.
