@@ -14,7 +14,7 @@ use Exporter::Rinci qw(import);
 
 our %SPEC;
 
-$SPEC{gen_sample_html} = {
+$SPEC{gen_sample_data} = {
     v => 1.1,
     summary => 'Generate sample HTML document',
     description => <<'_',
@@ -44,6 +44,7 @@ element.
 _
             req => 1,
             pos => 0,
+            tags => ['data-parameter'],
         },
     },
     result => {
@@ -51,7 +52,7 @@ _
     },
     result_naked => 1,
 };
-sub gen_sample_html {
+sub gen_sample_data {
     my %args = @_;
 
     my $size = $args{size} or die "Please specify size";
@@ -88,9 +89,9 @@ sub gen_sample_html {
 
 =head1 SYNOPSIS
 
- use PERLANCAR::HTML::Tree::Examples qw(gen_sample_html);
+ use PERLANCAR::HTML::Tree::Examples qw(gen_sample_data);
 
- my $html = gen_sample_html(size => 'medium1');
+ my $html = gen_sample_data(size => 'medium1');
 
 
 =head1 DESCRIPTION
@@ -99,7 +100,7 @@ sub gen_sample_html {
 
 =over
 
-# CODE: require PERLANCAR::HTML::Tree::Examples; require Text::Head; for my $size ('tiny1', 'small1', 'medium1') { print "=item * size=$size\n\n"; my $s = Text::Head::head_text(text => PERLANCAR::HTML::Tree::Examples::gen_sample_html(size=>$size), hint=>1, lines=>20); $s =~ s/^/ /gm; print $s, "\n" }
+# CODE: require PERLANCAR::HTML::Tree::Examples; require Text::Head; for my $size ('tiny1', 'small1', 'medium1') { print "=item * size=$size\n\n"; my $s = Text::Head::head_text(text => PERLANCAR::HTML::Tree::Examples::gen_sample_data(size=>$size), hint=>1, lines=>20); $s =~ s/^/ /gm; print $s, "\n" }
 
 =back
 
