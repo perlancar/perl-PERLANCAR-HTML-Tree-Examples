@@ -21,7 +21,7 @@ $SPEC{gen_sample_data} = {
 
 This routine can generate some sample HTML document with specified size (total
 number of elements and nested level). It is used for testing and benchmarking
-HTML::Parser or CSS selector like `Mojo::DOM`.
+<pm:HTML::Parser> or CSS selector like <pm:Mojo::DOM>.
 
 _
     args => {
@@ -31,7 +31,7 @@ _
             description => <<'_',
 
 There are several predefined sizes to choose from. The sizes are roughly
-equivalent to sample trees in `PERLANCAR::Tree::Examples`.
+equivalent to sample trees in <pm:PERLANCAR::Tree::Examples>.
 
 `tiny1` is a very tiny document, with only depth of 2 and a total of 3 elements,
 including root node.
